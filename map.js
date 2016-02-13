@@ -23,12 +23,7 @@ if (Meteor.isClient) {
 
         L.tileLayer.provider('MapQuestOpen.OSM').addTo(showMap);
         showMap.spin(false);
-
-
     };
-
-
-
 }
 
 if (Meteor.isServer) {
