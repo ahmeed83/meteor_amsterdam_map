@@ -1,0 +1,36 @@
+<head>
+  <title>map</title>
+</head>
+<body>
+  <header>
+      <div class="navbar navbar-default" role="navigation">
+          <div class="navbar-collapse collapse">
+              <ul class="nav navbar-nav">
+                  <li><a href="#">Home</a></li>
+              </ul>
+              <ul class="nav navbar-nav">
+                  <li><a href="https://www.google.com">Google</a></li>
+              </ul>
+              <ul class="nav navbar-nav navbar-right">
+                  {{> loginButtons}} <!-- here -->
+              </ul>
+          </div>
+      </div>
+  </header>
+
+  {{> amsterdamMap}}
+
+</body>
+
+
+
+
+<template name="amsterdamMap">
+
+    <div id="showMap" class="map"></div>
+
+    <div class="notice">
+        {{showMap}}
+    </div>
+</template>
+
