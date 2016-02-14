@@ -14,6 +14,9 @@
               <ul class="nav navbar-nav navbar-right">
                   {{> loginButtons}} <!-- here -->
               </ul>
+              <ul class="nav navbar-nav navbar-right">
+                  {{> addDestination}}
+              </ul>
           </div>
       </div>
   </header>
@@ -23,14 +26,22 @@
 </body>
 
 
+<template name="addDestination">
+    <form>
+        <input type="submit" value="Starting point">
+        <input type="text" name="start">
+    </form>
+    <form>
+        <input type="submit" value="Destination">
+        <input type="text" name="end">
+    </form>
+</template>
 
 
 <template name="amsterdamMap">
-
     <div id="showMap" class="map"></div>
-
     <div class="notice">
-        {{showMap}}
+        {{text}}
     </div>
 </template>
 
